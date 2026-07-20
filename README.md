@@ -1,51 +1,55 @@
 # HAMI Design System
 
-HAMI 的统一电商视觉规范仓库，供 Codex、设计师及其他 AI 工具生成 Shopee、Mercado Livre 和 TikTok Shop 商品图片时调用。
+HAMI 电商视觉的唯一设计事实源。该仓库让 Codex、ChatGPT、Claude Code、Cursor、Gemini 与后续 AI 系统以同一套品牌、token、组件、模板和 QA 规则生成 Shopee Official Store 商品图。
 
-## 强制使用原则
+Purpose: 统一 HAMI 商品图的所有视觉与执行契约。
+Usage: 从下方 Mandatory loading order 开始，禁止跳过模块。
+Dependencies: 运行时依赖兼容的 HAMI Product Library。
+Related Modules: 本仓库全部受治理目录与 Product Library。
+Version: `2.0.0`。
 
-1. 开始任何设计任务前，先读取 [`CODEX.md`](CODEX.md)。
-2. 所有封面主图必须读取 [`Templates/Template001-Cover.md`](Templates/Template001-Cover.md)。
-3. 产品必须遵守 [`Rules/ProductLock.md`](Rules/ProductLock.md)，不得重绘、变形或改变结构。
-4. 非必要情况下，每个文案块不得超过两行，并尽量减少文字总量。
-5. 输出前必须执行 [`QA/Image-QA.md`](QA/Image-QA.md)。
+## Mandatory loading order
 
-## 仓库结构
-
-```text
-Brand/          品牌身份与原则
-Tokens/         设计令牌
-Components/     可复用组件
-Templates/      Shopee 九张图永久模板
-Rules/          产品、文案、布局与素材规则
-Prompts/        可复用任务提示词
-QA/             自动检查与人工检查表
-Assets/         固定品牌资产
-Examples/       审核通过的标准案例
-Documentation/  架构与使用文档
-```
-
-## 快速调用
-
-向 Codex 输入：
-
-```text
-请先读取本仓库的 CODEX.md，然后使用 Template001-Cover 为以下产品制作 800×800 Shopee 封面图。
-产品：<产品名称>
-型号：<兼容型号>
-颜色：<产品颜色>
-素材：<产品图片路径>
-```
-
-## Canonical repositories
-
-- `HAMI-Design-System`: reusable brand rules, tokens, components, layouts, templates, prompts, QA and documentation.
-- `HAMI-Product-Library`: product pixels, product metadata and product-specific notes only.
-
-Files must never be duplicated between the two repositories. Design files reference product-library paths; product records reference design-system versions.
-
-## Required loading order
+任何读取、规划、生成或修改商品图片的动作开始前，必须完整加载：
 
 `README.md` → `CODEX.md` → `Brand/` → `Tokens/` → `Components/` → `Templates/` → `Rules/` → `QA/` → `HAMI-Product-Library`
 
-当前版本：`v2.0.0-dev`
+不得跳过、并行猜测或用模型记忆替代当前文件。详见 [`Documentation/AI-Loading-Protocol.md`](Documentation/AI-Loading-Protocol.md)。
+
+## Non-negotiable output contract
+
+- 800×800 px、RGB、PNG、Shopee Official Store。
+- 产品视觉占比 72%–75%，银灰渐变背景，Montserrat only。
+- 每张图最多四个卖点；每个文案块最多两行；outline icons only。
+- 所有布局值来自 token；8pt grid，safe area、Logo、spacing 与 margins 固定。
+- 产品像素来自 `HAMI-Product-Library`，不得重绘、变形、推断或补全。
+
+## Repository map
+
+| Module | Responsibility |
+| --- | --- |
+| [`Brand/`](Brand/) | 品牌身份、Logo、字体、颜色、图标、语气 |
+| [`Tokens/`](Tokens/) | 可复用机器可读设计值 |
+| [`Components/`](Components/) | 十个可复用视觉组件 |
+| [`Templates/`](Templates/) | Template001–009 永久版式规范 |
+| [`Rules/`](Rules/) | Product Lock、布局和文案约束 |
+| [`Prompts/`](Prompts/) | 只做路由、不复制规则的薄提示词 |
+| [`QA/`](QA/) | 自动检查器、schema 与人工检查表 |
+| [`Assets/`](Assets/) | 经验证的 Logo 与统一 outline SVG |
+| [`Examples/`](Examples/) | 命令解析示例，不存伪造产品图 |
+| [`Documentation/`](Documentation/) | 加载、选模、版本和贡献协议 |
+
+## Command example
+
+```text
+Generate QT Redmi Pad 2 Shopee Cover
+```
+
+系统将解析产品记录、调用 `Template001-Cover`、执行 QA 并导出；如果产品记录或必需真实素材不存在，则明确拒绝生成，不会用占位图冒充商品。详见 [`Documentation/Automation-Contract.md`](Documentation/Automation-Contract.md)。
+
+## Repository boundary
+
+- `HAMI-Design-System`：品牌、token、组件、布局、模板、prompt、QA、资产与文档。
+- `HAMI-Product-Library`：真实产品像素、产品元数据和产品专属备注。
+
+两仓库不得复制对方职责内的文件。当前稳定版本：`2.0.0`。

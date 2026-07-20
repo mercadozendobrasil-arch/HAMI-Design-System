@@ -2,6 +2,12 @@
 
 HAMI 的受控品牌资产。所有文件必须通过版本控制引用，禁止由生成模型重绘、补全或替换。
 
+## Purpose
+集中保存经验证的品牌源资产与统一图标。
+
+## Usage
+按下方目录和对应品牌文档引用；不得复制到 Product Library。
+
 ```text
 Assets/
 ├── logo/          经验证的 HAMI Logo 源文件
@@ -17,3 +23,5 @@ Assets/
 - 背景必须由 `Tokens/background.tokens.json` 定义，不保存随机生成的背景图。
 - 产品图片的唯一正式来源是 `HAMI-Product-Library`；本目录不复制或修改产品像素。
 
+## Dependencies / Related Modules / Version
+Depends on `../Brand/` and `../Tokens/`; related to components and templates. Version `2.0.0`.

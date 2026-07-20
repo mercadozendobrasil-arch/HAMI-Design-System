@@ -1,63 +1,63 @@
 # HAMI Codex Operating Instructions
 
-本文件是 Codex 在本仓库中的最高级设计执行说明。
+本文件是 AI 执行 HAMI 商品图片任务的强制运行契约。
 
-## 启动顺序
+Purpose: 约束 AI 的加载、解析、生成与拒绝行为。
+Usage: 每个新商品图片任务都从 Preflight gate 开始。
 
-每次接到商品图片任务时，必须按顺序读取：
+## Preflight gate
 
-1. `Brand/`
-2. `Tokens/`
-3. `Components/`
-4. `Templates/`
-5. `Rules/`
-6. `QA/`
-7. `HAMI-Product-Library/README.md` 与目标产品目录
+在做任何分析、选模、写 prompt、排版或生成之前，必须完整读取且按顺序完成：
 
-## 核心任务
+1. `README.md`
+2. `CODEX.md`
+3. `Brand/` 全部文档
+4. `Tokens/` 全部文档与 JSON
+5. `Components/` 全部文档
+6. `Templates/` 全部文档
+7. `Rules/` 全部文档
+8. `QA/` 全部文档、schema 和验证器契约
+9. `HAMI-Product-Library/README.md`、manifest、schema、目标系列和目标产品记录
 
-Codex 的职责是执行固定模板，不是为每个 SKU 重新发明风格。除用户明确要求升级 Design System 外，不得改变品牌色、字体、网格、Logo 位置、阴影参数和模板结构。
+未完成 preflight 时，禁止开始工作。每次新的商品图片任务都必须重新执行，不能依赖上一次读取或模型记忆。
 
-## 绝对优先级
+## Execution contract
+
+1. 将自然语言命令解析为 `series`、`product`、`channel`、`template`。
+2. 在 Product Library 中定位唯一产品记录并验证 metadata 与文件哈希。
+3. 依据任务映射 Template001–009，不改变模板布局。
+4. 只加载模板声明的 token、组件、icon 和规则依赖。
+5. 保持真实产品像素锁定，只组合背景、文案、图标和版式。
+6. 生成 800×800 RGB PNG 和 image manifest。
+7. 运行模板 QA、Product Lock QA、Layout QA 和 Final QA；失败则修正或拒绝导出。
+
+## Priority
 
 1. 产品真实性与结构完整
 2. 模板一致性
 3. 手机端可读性
-4. 商品视觉占比
-5. 美观与装饰
+4. 产品视觉占比
+5. 装饰美观
 
-发生冲突时，按以上顺序处理。
+## Product Lock
 
-## 产品锁定
+不得重绘、推断或修改摄像头孔、扬声器孔、按键、接口、圆角、形状、透视、比例、透明 TPU、纹理与颜色边界。缺少真实素材时必须停止生成并报告缺失项。
 
-不得重绘、推断或修改产品。不得改变摄像头孔位、扣子、接口、按键、比例、厚度、透明区域、纹理、颜色边界和透视关系。必须优先使用真实商品 PNG；只有背景、光影、文字、图标和版式可以被设计。
+## Fixed image rules
 
-## 文案限制
+- 800×800 px、RGB、PNG。
+- Montserrat only。
+- 银灰渐变背景。
+- 产品视觉占比 72%–75%。
+- 每张图最多四个短卖点，每个文案块最多两行。
+- outline icons only。
+- 所有布局值由 token 提供；禁止硬编码新值。
+- 默认输出语言为巴西葡萄牙语。
 
-- 非必要情况下，每个文案块最多两行。
-- 封面标题最多两行，副标题最多一行。
-- 一张封面最多四个短卖点；优先使用二至四个。
-- 不得用缩小字号解决文案过多；必须删减文案。
-- 输出语言默认为巴西葡萄牙语。
+## Default routing
 
-## 输出规范
+“Cover / 封面 / 主图”映射到 `Templates/Template001-Cover.md`。其他映射见 `Documentation/Template-Selection.md`。不得在模板之外发明布局或随机风格。
 
-- 默认尺寸：800 × 800 px
-- 色彩：RGB
-- 格式：PNG
-- 无压缩失真
-- 产品清晰、边缘干净
-- 不出现第三方品牌 Logo，除非用户明确提供且有权使用
-
-## 工作流
-
-1. 核对产品素材是否足够清晰。
-2. 识别任务对应模板并加载对应设计令牌与组件。
-3. 生成文案草案并先压缩到最少。
-4. 按模板坐标和比例组合，不改变产品结构。
-5. 运行 `QA/` 中对应检查表与自动检查。
-6. 不通过则自动修正后再导出。
-
-## 默认调用
-
-用户只说“做封面主图”时，默认调用 `templates/Template001-Cover.md`。
+Version: `2.0.0`
+Dependencies: `README.md`, all governed modules, `HAMI-Product-Library`.
+Related: `Documentation/AI-Loading-Protocol.md`, `Documentation/Automation-Contract.md`.

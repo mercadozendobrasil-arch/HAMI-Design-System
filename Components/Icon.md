@@ -3,7 +3,7 @@
 ## Purpose
 Render an approved SVG from the single HAMI outline library.
 
-## Inputs
+## Usage / Inputs
 `iconId`, `sizeToken`, optional `colorToken`.
 
 ## Slots

@@ -1,5 +1,11 @@
 # Template002 — Selling Points
 
+## Purpose
+Provide the permanent HAMI selling-points specification.
+
+## Usage
+Select only for Selling Points intent, resolve every named dependency, then run the listed QA without changing layout.
+
 ## Mission
 Communicate up to four verified benefits around one unchanged product.
 ## Canvas

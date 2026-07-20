@@ -3,7 +3,7 @@
 ## Purpose
 Pair one verified benefit label with one approved outline icon.
 
-## Inputs
+## Usage / Inputs
 `label`, `iconId`, optional `accent=false`.
 
 ## Slots

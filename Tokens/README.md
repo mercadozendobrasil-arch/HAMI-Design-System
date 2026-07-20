@@ -6,4 +6,4 @@ Machine-readable and human-readable design decisions live here. Templates and co
 - Usage: load token files before components or templates.
 - Dependencies: `Brand/`.
 - Related modules: `Components/`, `Templates/`, `QA/`.
-- Version: `2.0.0-dev`.
+- Version: `2.0.0`.

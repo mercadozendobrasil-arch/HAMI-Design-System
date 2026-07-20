@@ -1,5 +1,11 @@
 # HAMI Logo Assets
 
+## Purpose
+保存不经重绘的 HAMI Logo canonical source。
+
+## Usage
+只按 `../../Brand/LogoSystem.md` 和 Logo placement token 使用原文件。
+
 ## Canonical Source
 
 - File: `hami-primary-source.png`
@@ -10,3 +16,5 @@
 
 Do not trace, redraw, recolor, stretch, crop, enhance, or synthesize this logo. A vector file may become canonical only after explicit brand approval.
 
+## Dependencies / Related Modules / Version
+Depends on `../../Brand/LogoSystem.md`; related to layout tokens and Cover QA. Version `2.0.0`.

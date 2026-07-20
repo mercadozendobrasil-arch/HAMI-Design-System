@@ -1,5 +1,11 @@
 # Template003 — Stand
 
+## Purpose
+Provide the permanent HAMI stand specification.
+
+## Usage
+Select only for Stand intent, resolve every named dependency, then run the listed QA without changing layout.
+
 ## Mission
 Explain verified stand positions or rotation without implying unsupported movement.
 ## Canvas

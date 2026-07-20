@@ -1,5 +1,11 @@
 # Template009 — Package
 
+## Purpose
+Provide the permanent HAMI package specification.
+
+## Usage
+Select only for Package intent, resolve every named dependency, then run the listed QA without changing layout.
+
 ## Mission
 Show exactly what the buyer receives, with clear quantities and no implied extras.
 ## Canvas

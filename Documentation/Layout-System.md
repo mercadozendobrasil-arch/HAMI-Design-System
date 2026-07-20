@@ -4,7 +4,7 @@
 
 Explain how renderers compose a HAMI image without redesigning it.
 
-## Composition flow
+## Usage / Composition flow
 
 1. Create the canvas from canvas and background tokens.
 2. Select the template's named zones from layout tokens.

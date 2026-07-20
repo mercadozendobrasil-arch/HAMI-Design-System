@@ -3,7 +3,7 @@
 ## Purpose
 Connect a real product detail to a concise label.
 
-## Inputs
+## Usage / Inputs
 `anchor`, `label`, optional `iconId`, optional `detailCrop`.
 
 ## Slots

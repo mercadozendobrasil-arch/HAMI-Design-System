@@ -1,7 +1,16 @@
 # Prompt001 — Cover
 
-Execute `PromptContract.md` with `templateId=Template001`, the requested Product Library record and `QA/Cover-QA.md` plus Final QA. Do not add visual rules here.
+## Purpose
+路由 Shopee 封面任务。
 
-Example command: `Generate <series> <product> Shopee Cover`.
+## Usage
+以 `templateId=Template001`、目标 Product Library 记录、Cover QA 与 Final QA 执行 `PromptContract.md`。示例：`Generate <series> <product> Shopee Cover`。
 
-Version `2.0.0`.
+## Dependencies
+`PromptContract.md`, `../Templates/Template001-Cover.md`, `../QA/Cover-QA.md`.
+
+## Related Modules
+`../QA/Final-QA.md`, `../Rules/ProductLock.md`.
+
+## Version
+`2.0.0`

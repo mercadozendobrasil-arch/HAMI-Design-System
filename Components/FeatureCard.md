@@ -3,7 +3,7 @@
 ## Purpose
 Group one product detail, one label and optional supporting caption.
 
-## Inputs
+## Usage / Inputs
 `imageCrop`, `label`, optional `caption`, optional `iconId`.
 
 ## Slots

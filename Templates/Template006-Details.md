@@ -1,5 +1,11 @@
 # Template006 — Details
 
+## Purpose
+Provide the permanent HAMI details specification.
+
+## Usage
+Select only for Details intent, resolve every named dependency, then run the listed QA without changing layout.
+
 ## Mission
 Make real cutouts, buttons, straps, closures and holders easy to inspect.
 ## Canvas

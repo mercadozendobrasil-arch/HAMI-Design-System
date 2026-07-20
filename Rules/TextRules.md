@@ -1,5 +1,13 @@
 # Text Rules
 
+## Purpose
+
+确保所有 HAMI 图片文案简短、真实、统一并适合手机端阅读。
+
+## Usage
+
+模板组合前压缩文案并验证事实；组合后检查行数、卖点数量、Montserrat 字体和语言。
+
 ## Default Language
 
 面向巴西电商的图片文案默认使用巴西葡萄牙语。
@@ -33,3 +41,15 @@
 - 超过两行的说明
 - 为填满空间增加无价值文案
 - 过小字体
+
+## Dependencies
+
+`../Brand/Typography.md`, `../Brand/VoiceAndCopy.md`, `../Tokens/typography.tokens.json`.
+
+## Related Modules
+
+`../Components/Title.md`, `../Components/SellingPoint.md`, `../QA/Final-QA.md`.
+
+## Version
+
+`2.0.0`

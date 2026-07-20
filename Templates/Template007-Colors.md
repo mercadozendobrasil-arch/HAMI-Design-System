@@ -1,5 +1,11 @@
 # Template007 — Colors
 
+## Purpose
+Provide the permanent HAMI colors specification.
+
+## Usage
+Select only for Colors intent, resolve every named dependency, then run the listed QA without changing layout.
+
 ## Mission
 Present only verified, currently available colors of the same product structure.
 ## Canvas

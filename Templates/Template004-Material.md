@@ -1,5 +1,11 @@
 # Template004 — Material
 
+## Purpose
+Provide the permanent HAMI material specification.
+
+## Usage
+Select only for Material intent, resolve every named dependency, then run the listed QA without changing layout.
+
 ## Mission
 Show verified material, texture, transparency or hardness using real detail pixels.
 ## Canvas

@@ -1,5 +1,10 @@
 # HAMI Image QA Checklist — Compatibility Alias
 
-Use `Final-QA.md` and the template-specific checklist. This file preserves old links and does not duplicate the canonical checklist.
+## Purpose
+Preserve old QA links without duplicating the canonical checklist.
 
-Version `2.0.0`.
+## Usage
+Forward to `Final-QA.md` and the template-specific checklist.
+
+## Dependencies / Related Modules / Version
+Depends on and relates to `Final-QA.md` plus the selected template QA. Version `2.0.0`.

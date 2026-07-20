@@ -3,7 +3,7 @@
 ## Purpose
 Display one short, verified status such as included quantity or compatibility grouping.
 
-## Inputs
+## Usage / Inputs
 `label`, `tone=neutral|accent|success|warning`.
 
 ## Slots

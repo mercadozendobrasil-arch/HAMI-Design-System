@@ -1,5 +1,11 @@
 # Template001 — Cover
 
+## Purpose
+Provide the permanent HAMI cover specification.
+
+## Usage
+Select only for Cover intent, resolve every named dependency, then run the listed QA without changing layout.
+
 ## Mission
 Create the official-store first image: identify the real product and its primary verified value within one second.
 

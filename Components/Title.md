@@ -3,7 +3,7 @@
 ## Purpose
 Render one primary heading and optional subtitle.
 
-## Inputs
+## Usage / Inputs
 `title`, optional `subtitle`, `alignment=left`, optional `accentSpan`.
 
 ## Slots

@@ -6,4 +6,4 @@ Reusable image-layout components live here. Components consume only `Tokens/`, e
 - Usage: compose templates from documented component contracts.
 - Dependencies: `Tokens/`, `Brand/`, `Rules/`.
 - Related modules: `Templates/`, `QA/`.
-- Version: `2.0.0-dev`.
+- Version: `2.0.0`.

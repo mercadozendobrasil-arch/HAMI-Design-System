@@ -1,5 +1,16 @@
 # Prompt009 — Package
 
-Execute `PromptContract.md` with `templateId=Template009`, verified package contents and `QA/Package-QA.md` plus Final QA.
+## Purpose
+路由经验证包装清单页。
 
-Version `2.0.0`.
+## Usage
+以 `templateId=Template009`、verified package contents、Package QA 与 Final QA 执行 `PromptContract.md`。
+
+## Dependencies
+`PromptContract.md`, `../Templates/Template009-Package.md`, `../QA/Package-QA.md`.
+
+## Related Modules
+`../Components/ProductCard.md`, `../QA/Final-QA.md`.
+
+## Version
+`2.0.0`

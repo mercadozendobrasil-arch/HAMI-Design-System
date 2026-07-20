@@ -4,6 +4,10 @@
 
 Define the shared interface for all HAMI components.
 
+## Usage
+
+Every component specification must implement the required fields and rules below.
+
 ## Required fields
 
 Every component declares purpose, inputs, output slots, token dependencies, content limits, product-lock impact, QA assertions, related modules and version. Components never own absolute layout positions; templates place them.
@@ -19,3 +23,7 @@ Every component declares purpose, inputs, output slots, token dependencies, cont
 ## Version
 
 `2.0.0`
+
+## Dependencies / Related Modules
+
+Depends on `../Tokens/` and `../Rules/`; related to every component and template.

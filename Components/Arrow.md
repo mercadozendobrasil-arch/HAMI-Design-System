@@ -3,7 +3,7 @@
 ## Purpose
 Indicate a verified direction, angle or relationship.
 
-## Inputs
+## Usage / Inputs
 `path`, `direction`, optional `label`, `accent=false`.
 
 ## Slots

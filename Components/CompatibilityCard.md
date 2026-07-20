@@ -3,7 +3,7 @@
 ## Purpose
 Present a verified model group without third-party logos.
 
-## Inputs
+## Usage / Inputs
 `heading`, `models[]`, optional `screenSize`, optional `yearRange`.
 
 ## Slots

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "HAMI-Design-System",
+  "version": "2.0.0",
+  "status": "stable",
+  "canvas": {"width": 800, "height": 800, "colorMode": "RGB", "format": "PNG"},
+  "loadOrder": ["README.md", "CODEX.md", "Brand", "Tokens", "Components", "Templates", "Rules", "QA", "HAMI-Product-Library"],
+  "modules": {
+    "brand": "Brand/README.md",
+    "tokens": "Tokens/README.md",
+    "components": "Components/README.md",
+    "templates": "Templates/README.md",
+    "rules": "Rules/README.md",
+    "prompts": "Prompts/README.md",
+    "qa": "QA/README.md",
+    "assets": "Assets/README.md",
+    "examples": "Examples/README.md",
+    "documentation": "Documentation/Module-Index.md"
+  },
+  "productLibrary": {
+    "repository": "https://github.com/mercadozendobrasil-arch/HAMI-Product-Library",
+    "compatibleVersion": ">=1.0.0 <2.0.0"
+  },
+  "constraints": {
+    "productOccupancyPercent": {"minimum": 72, "maximum": 75},
+    "fontFamilies": ["Montserrat"],
+    "maxSellingPoints": 4,
+    "maxLinesPerTextBlock": 2,
+    "iconStyle": "outline",
+    "gridBasePx": 8,
+    "productLockRequired": true
+  }
+}
+

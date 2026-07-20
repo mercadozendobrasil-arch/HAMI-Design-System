@@ -3,7 +3,7 @@
 ## Purpose
 Place real product pixels within deterministic bounds while preserving Product Lock.
 
-## Inputs
+## Usage / Inputs
 `assetPath`, `assetSha256`, `fit=contain`, optional `shadowToken=shadow.product`, optional `rotation`.
 
 ## Slots

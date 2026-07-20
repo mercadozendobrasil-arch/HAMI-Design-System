@@ -16,6 +16,10 @@ Color, typography, spacing, radius, shadow, background, border, icon, animation 
 
 `../Brand/` defines intent. Tokens are consumed by `../Components/`, `../Templates/`, `../Rules/` and `../QA/`.
 
+## Related Modules
+
+`../Documentation/Layout-System.md`, `index.json`, `schema.json`.
+
 ## Version
 
 `2.0.0`

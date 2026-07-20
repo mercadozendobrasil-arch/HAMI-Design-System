@@ -1,5 +1,11 @@
 # Template008 — Compatibility
 
+## Purpose
+Provide the permanent HAMI compatibility specification.
+
+## Usage
+Select only for Compatibility intent, resolve every named dependency, then run the listed QA without changing layout.
+
 ## Mission
 Prevent incorrect purchases by presenting verified compatible models clearly.
 ## Canvas

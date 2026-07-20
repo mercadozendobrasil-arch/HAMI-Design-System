@@ -3,7 +3,7 @@
 ## Purpose
 Separate information groups without decorative noise.
 
-## Inputs
+## Usage / Inputs
 `orientation=horizontal|vertical`, optional `lengthToken`.
 
 ## Slots

@@ -1,5 +1,11 @@
 # Template005 — Protection
 
+## Purpose
+Provide the permanent HAMI protection specification.
+
+## Usage
+Select only for Protection intent, resolve every named dependency, then run the listed QA without changing layout.
+
 ## Mission
 Explain real protective geometry without unsupported military or drop-test claims.
 ## Canvas
