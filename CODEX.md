@@ -6,14 +6,13 @@
 
 每次接到商品图片任务时，必须按顺序读取：
 
-1. `brand/BrandIdentity.md`
-2. `brand/ColorSystem.md`
-3. `brand/Typography.md`
-4. `brand/GridSystem.md`
-5. `rules/ProductLock.md`
-6. `rules/TextRules.md`
-7. 对应的 `templates/TemplateXXX-*.md`
-8. `checklists/Image-QA.md`
+1. `Brand/`
+2. `Tokens/`
+3. `Components/`
+4. `Templates/`
+5. `Rules/`
+6. `QA/`
+7. `HAMI-Product-Library/README.md` 与目标产品目录
 
 ## 核心任务
 
@@ -53,10 +52,10 @@ Codex 的职责是执行固定模板，不是为每个 SKU 重新发明风格。
 ## 工作流
 
 1. 核对产品素材是否足够清晰。
-2. 识别任务对应模板。
+2. 识别任务对应模板并加载对应设计令牌与组件。
 3. 生成文案草案并先压缩到最少。
 4. 按模板坐标和比例组合，不改变产品结构。
-5. 运行 `checklists/Image-QA.md`。
+5. 运行 `QA/` 中对应检查表与自动检查。
 6. 不通过则自动修正后再导出。
 
 ## 默认调用
