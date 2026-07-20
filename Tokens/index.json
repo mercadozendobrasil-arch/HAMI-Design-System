@@ -5,6 +5,6 @@
     "color.tokens.json", "typography.tokens.json", "spacing.tokens.json",
     "radius.tokens.json", "shadow.tokens.json", "background.tokens.json",
     "border.tokens.json", "icon.tokens.json", "animation.tokens.json",
-    "component.tokens.json"
+    "component.tokens.json", "layout.tokens.json"
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tokens": {
+    "layout.cover.logo": {"x": "{logo.x}", "y": "{logo.y}", "width": "{logo.cover.width}"},
+    "layout.cover.textZone": {"x": 40, "y": 176, "width": 264, "height": 488},
+    "layout.cover.productZone": {"x": 296, "y": 96, "width": 464, "height": 648},
+    "layout.aux.headerZone": {"x": 40, "y": 40, "width": 720, "height": 120},
+    "layout.aux.productZone": {"x": 104, "y": 160, "width": 592, "height": 520},
+    "layout.aux.footerZone": {"x": 40, "y": 696, "width": 720, "height": 64},
+    "layout.layer.background": 0,
+    "layout.layer.shadow": 10,
+    "layout.layer.product": 20,
+    "layout.layer.annotation": 30,
+    "layout.layer.copy": 40,
+    "layout.layer.logo": 50
+  }
+}
