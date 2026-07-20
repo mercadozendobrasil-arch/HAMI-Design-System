@@ -1,16 +1,28 @@
-# Template 003 — Stand Function
+# Template003 — Stand
 
-## Purpose
-展示支架角度、横竖屏模式或 360° 旋转功能。
-
+## Mission
+Explain verified stand positions or rotation without implying unsupported movement.
+## Canvas
+Use canvas, background and export tokens.
 ## Layout
-- 使用 1 个主姿态 + 最多 2 个辅助姿态
-- 主产品占画面 60–70%
-- 用少量箭头或角度标识表达运动方向
-- 标题位于左上或上方，最多两行
-
-## Rules
-- 箭头只表达真实可实现的运动方向
-- 不改变支架结构、折痕或扣件位置
-- 不超过 3 个产品姿态
-- 文案优先：`Ajuste de Ângulo`、`Uso Horizontal e Vertical`、`Rotação 360°`
+One primary real pose and at most two auxiliary real poses in named auxiliary zones.
+## Grid
+Use global grid, safe area and product coverage tokens.
+## Typography
+Title and optional one-line subtitle using Montserrat roles.
+## Components
+Title, Product Card, Arrow and optional Badge.
+## Icons
+Outline direction/rotation icon only when motion is verified.
+## Spacing
+Use spacing tokens; arrows remain outside key product structures.
+## Product Rules
+Every pose must be a real Product Library asset; never reconstruct a stand or hinge.
+## Text Rules
+Brazilian Portuguese; angle values only from metadata; maximum two lines per block.
+## QA
+Run ProductLock-QA, Layout-QA and Final-QA; reject inferred angles or motion.
+## Examples
+`Uso Horizontal e Vertical` is allowed only when both source poses exist.
+## Dependencies / Related / Version
+Tokens, Arrow, Product Card, Product Lock and Prompt003. Version `2.0.0`.
