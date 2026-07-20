@@ -1,34 +1,77 @@
-# Template009 — Package
+# Template009 — Package Contents
+
+Version: 2.1.0
+Status: LOCKED
 
 ## Purpose
-Provide the permanent HAMI package specification.
+Show exactly what the buyer receives, with verified quantities and no implied accessories.
 
-## Usage
-Select only for Package intent, resolve every named dependency, then run the listed QA without changing layout.
+## Required inputs
+- One valid Product Library record.
+- Non-empty `packageContents` metadata.
+- One real asset for every visible included item.
+- Verified quantity for every item.
 
-## Mission
-Show exactly what the buyer receives, with clear quantities and no implied extras.
+Return `BLOCKED_MISSING_PACKAGE_CONTENTS` when any item, quantity or source asset is missing.
+
 ## Canvas
-Use canvas, background and export tokens.
-## Layout
-Largest included product first; included accessories follow in a tokenized grid with quantity badges.
-## Grid
-Use global grid, safe area and product coverage tokens.
-## Typography
-Title and one-line quantity labels using Montserrat.
+- 800 × 800 px, RGB, PNG.
+- Global silver background, 40 px safe area, 8-point grid.
+
+## Fixed composition
+- Header: x 40–760, y 40–136.
+- Primary included product: x 40–470, y 160–670.
+- Included-items grid: x 490–760, y 180–640.
+- Footer/model line: x 40–760, y 716–760.
+- Display 1–5 item types.
+- Largest/primary purchased item must remain visually dominant.
+
 ## Components
-Title, Product Card, Badge and Divider.
-## Icons
-No decorative icons; outline package icon optional.
-## Spacing
-Use equal grid gaps and card padding tokens.
-## Product Rules
-Each visible item requires a real Product Library asset and package-content metadata entry.
-## Text Rules
-Brazilian Portuguese; `quantity × item`; one line each; no tablet or stylus unless included.
-## QA
-Run Package-QA, ProductLock-QA, Layout-QA and Final-QA; cross-check every item and quantity.
-## Examples
-`1 × Capa` is valid only when package metadata confirms one case.
-## Dependencies / Related / Version
-Tokens, Badge, product metadata and Prompt009. Version `2.0.0`.
+Use only `Title`, `ProductCard`, `PackageItem`, `QuantityBadge` and `Divider`.
+
+## Typography
+- Montserrat only.
+- Title maximum two lines.
+- Item label format: `{quantity} × {item}`.
+- One line preferred, two maximum.
+
+## Content rules
+- Every visible item must appear in `packageContents` metadata.
+- Use real source assets; do not generate styluses, films, cleaning kits, tablets, cables or packaging.
+- Distinguish included products from demonstration devices.
+- When a tablet is shown only to demonstrate fit, it must not appear on this page unless included.
+- Quantity badges must match metadata exactly.
+
+## Allowed examples
+Only when confirmed:
+- `1 × Capa`
+- `1 × Película Flexível`
+- `1 × Película de Vidro`
+- `1 × Caneta Touch`
+- `1 × Kit de Limpeza`
+
+## Forbidden
+- `Tablet não incluso` as a workaround for showing a tablet; omit the tablet instead.
+- Decorative boxes or accessories not shipped.
+- More than five item types.
+- Generic package renders.
+- Unverified bonuses, gifts or free items.
+
+## QA gate
+Run:
+1. ProductRecord-QA
+2. PackageSchema-QA
+3. AssetPresence-QA
+4. Quantity-QA
+5. ProductLock-QA
+6. Text-QA
+7. Layout-QA
+8. Final-QA
+
+Reject if any visible item lacks metadata, quantity differs, an accessory is implied, text exceeds two lines or the main purchased item is not dominant.
+
+## Output naming
+`{style}-{model}-{color}-T09-package-800.png`
+
+## Dependencies
+Tokens, Title, ProductCard, PackageItem, QuantityBadge, metadata schema, ProductLock, Prompt009 and QA modules.
