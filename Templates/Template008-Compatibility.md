@@ -1,17 +1,28 @@
-# Template 008 — Compatibility
+# Template008 — Compatibility
 
-## Purpose
-清晰展示兼容型号和尺寸，降低买错概率。
-
+## Mission
+Prevent incorrect purchases by presenting verified compatible models clearly.
+## Canvas
+Use canvas, background and export tokens.
 ## Layout
-- 标题位于顶部，最多两行
-- 型号使用大字号分组，不堆成长段
-- 每组最多 3–5 个型号
-- 必要时使用品牌/系列分栏，但不使用第三方 Logo
-
-## Rules
-- 型号必须由用户或商品资料确认
-- 不得自行推断兼容性
-- 屏幕尺寸与年份需保持准确格式
-- 手机端最小字号不低于 18 px
-- 文案块最多两行
+Title, one supporting product view and tokenized Compatibility Cards grouped by series.
+## Grid
+Use global grid and safe-area tokens; maintain global product coverage through the supporting product view.
+## Typography
+Title, card headings and model rows using Montserrat; never reduce below caption token.
+## Components
+Title, Product Card, Compatibility Card and Divider.
+## Icons
+No third-party logos; outline device icon optional.
+## Spacing
+Use card padding and group spacing tokens.
+## Product Rules
+Use the exact Product Library record associated with compatibility metadata.
+## Text Rules
+Brazilian Portuguese; exact model, year and size formats; up to five models per card.
+## QA
+Run Compatibility-QA, ProductLock-QA, Layout-QA and Final-QA; reject inferred models.
+## Examples
+Model names are copied verbatim from `compatibleModels`; empty data blocks export nothing.
+## Dependencies / Related / Version
+Tokens, Compatibility Card, metadata schema and Prompt008. Version `2.0.0`.
