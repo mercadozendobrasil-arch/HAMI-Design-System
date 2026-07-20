@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HAMI Image QA Manifest",
+  "type": "object",
+  "required": ["schemaVersion", "designSystemVersion", "productLibraryVersion", "template", "file", "fontFamily", "backgroundToken", "productCoverage", "logo", "textBlocks", "sellingPoints", "iconStyle", "sourceAssetSha256", "productLockPassed", "claimsVerified"],
+  "properties": {
+    "schemaVersion": {"const": "1.0"},
+    "template": {"pattern": "^Template00[1-9]$"},
+    "productCoverage": {"type": "number", "minimum": 0.72, "maximum": 0.75},
+    "fontFamily": {"const": "Montserrat"},
+    "backgroundToken": {"const": "background.default"},
+    "iconStyle": {"enum": ["outline", "none"]},
+    "productLockPassed": {"const": true},
+    "claimsVerified": {"const": true}
+  }
+}
