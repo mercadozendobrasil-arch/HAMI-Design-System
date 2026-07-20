@@ -1,15 +1,28 @@
-# Template 004 — Material
+# Template004 — Material
 
-## Purpose
-展示材质、纹理、透明度、柔韧性或玻璃硬度。
-
+## Mission
+Show verified material, texture, transparency or hardness using real detail pixels.
+## Canvas
+Use canvas, background and export tokens.
 ## Layout
-- 左侧或中央放真实材质细节放大图
-- 右侧保留完整产品，避免用户只看到局部
-- 最多 2 个材质卖点
-
-## Rules
-- 不得虚构材质层数、厚度或实验效果
-- 放大区域必须来自真实产品
-- 标题最多两行；说明优先一行
-- 推荐文案：`Material Resistente`、`Toque Suave`、`Alta Transparência`、`Dureza 9H`
+One complete product plus one or two Feature Cards with real crops.
+## Grid
+Use global grid, safe area and product coverage tokens.
+## Typography
+Title plus up to two short material labels using Montserrat.
+## Components
+Title, Product Card, Feature Card and Callout.
+## Icons
+Approved outline material icon only if semantically exact.
+## Spacing
+Use card padding, radius and spacing tokens.
+## Product Rules
+Details must come from the same product record; never invent layers, thickness or test results.
+## Text Rules
+Brazilian Portuguese; maximum two material claims; verified facts only.
+## QA
+Run ProductLock-QA, Layout-QA and Final-QA; verify crop provenance.
+## Examples
+`Alta Transparência` requires metadata evidence; otherwise omit it.
+## Dependencies / Related / Version
+Tokens, Feature Card, Callout, Product Lock and Prompt004. Version `2.0.0`.
