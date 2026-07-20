@@ -1,15 +1,28 @@
-# Template 006 — Product Details
+# Template006 — Details
 
-## Purpose
-展示开孔、按键、扣子、绑带、笔槽、磁吸等真实细节。
-
+## Mission
+Make real cutouts, buttons, straps, closures and holders easy to inspect.
+## Canvas
+Use canvas, background and export tokens.
 ## Layout
-- 1 个完整产品 + 2–4 个局部细节
-- 局部框统一圆角和边框
-- 每个细节只配一个短标签
-
-## Rules
-- 所有细节必须来自同一真实商品
-- 不补画不存在的孔位或配件
-- 每个标签最多一行
-- 推荐文案：`Recortes Precisos`、`Fecho Seguro`、`Porta-caneta`、`Botões Protegidos`
+One complete product plus two to four uniformly styled Feature Cards.
+## Grid
+Use global grid, safe area and product coverage tokens.
+## Typography
+Title and one-line detail labels using Montserrat.
+## Components
+Title, Product Card, Feature Card, Callout and Divider.
+## Icons
+Use outline icons only when they reduce ambiguity.
+## Spacing
+Use card padding, radius, divider and spacing tokens.
+## Product Rules
+All details must originate from one product record; no inferred holes or accessories.
+## Text Rules
+Brazilian Portuguese; one label per detail, one line each.
+## QA
+Run ProductLock-QA, Layout-QA and Final-QA; verify every crop provenance link.
+## Examples
+`Recortes Precisos` requires visible and correctly positioned real cutouts.
+## Dependencies / Related / Version
+Tokens, Feature Card, Product Lock and Prompt006. Version `2.0.0`.
