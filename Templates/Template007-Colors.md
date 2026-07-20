@@ -1,16 +1,28 @@
-# Template 007 — Color Options
+# Template007 — Colors
 
-## Purpose
-展示同一产品的可选颜色。
-
+## Mission
+Present only verified, currently available colors of the same product structure.
+## Canvas
+Use canvas, background and export tokens.
 ## Layout
-- 默认展示 3–6 个颜色
-- 主色产品最大，其余颜色等比例排列
-- 使用统一角度、光线和阴影
-- 颜色名称放在产品下方，最多一行
-
-## Rules
-- 只能展示真实在售颜色
-- 不得通过生成式重绘臆造颜色
-- 所有颜色版本结构必须完全一致
-- 背景保持银灰或白色，不与产品颜色争夺视觉焦点
+One primary color view and two to five secondary equal-angle views.
+## Grid
+Use global grid, safe area and product coverage tokens.
+## Typography
+Title and one-line color labels using Montserrat.
+## Components
+Title, Product Card, Badge and Divider.
+## Icons
+No icon by default; approved outline icon only if required.
+## Spacing
+Use equal tokenized gaps and one shared visual baseline.
+## Product Rules
+Every color requires a real Product Library asset; no generative recoloring.
+## Text Rules
+Brazilian Portuguese color names from metadata; one line each.
+## QA
+Run ProductLock-QA, Layout-QA and Final-QA; compare geometry, angle, light and availability.
+## Examples
+If only one verified color exists, do not use this template.
+## Dependencies / Related / Version
+Tokens, Product Card, Product Lock and Prompt007. Version `2.0.0`.
