@@ -1,19 +1,28 @@
-# Template 002 — Selling Points
+# Template002 — Selling Points
 
-## Purpose
-展示 3–6 个核心卖点，但默认优先 4 个。
-
+## Mission
+Communicate up to four verified benefits around one unchanged product.
+## Canvas
+Use canvas, background and export tokens.
 ## Layout
-- 产品位于中心或右侧，占画面 55–65%
-- 卖点沿左侧或四周排列
-- 每个卖点由统一线性图标 + 1 行短文案组成
-- 不使用长段说明
-
-## Rules
-- 每个文案块最多两行，优先一行
-- 图标风格必须读取 `brand/IconSystem.md`
-- 单张图只围绕同一产品，不混入无关场景
-- 产品必须遵守 `rules/ProductLock.md`
-
-## Recommended Copy
-`Rotação 360°` / `Ajuste Universal` / `Encaixe Seguro` / `Proteção Reforçada`
+Use auxiliary header, product and footer zones; place the product first, then a tokenized Selling Point list outside key structures.
+## Grid
+Use the 8-point grid and safe-area tokens; product coverage uses the global product range.
+## Typography
+Title Component plus `font.feature` labels; Montserrat only.
+## Components
+Title, Product Card, Selling Point and Divider.
+## Icons
+One approved outline icon per point; consistent size and stroke.
+## Spacing
+Use `space.2` within points and `space.3` between groups.
+## Product Rules
+One Product Library record; no unrelated scene or generated replacement pixels.
+## Text Rules
+Brazilian Portuguese; one line preferred, two maximum; no more than four points.
+## QA
+Run Selling-QA, ProductLock-QA, Layout-QA and Final-QA.
+## Examples
+Verified labels may include `Rotação 360°` or `Encaixe Seguro` only when metadata confirms them.
+## Dependencies / Related / Version
+Tokens, Selling Point component, Product Lock and Prompt002. Version `2.0.0`.
