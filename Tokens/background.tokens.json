@@ -1,0 +1,9 @@
+{
+  "version": "2.0.0",
+  "tokens": {
+    "background.default": {"type": "linear-gradient", "angle": 180, "start": "{color.surface.top}", "end": "{color.surface.bottom}"},
+    "background.card": "{color.surface.card}",
+    "background.texture": "none",
+    "background.reflection.opacity": 0.06
+  }
+}

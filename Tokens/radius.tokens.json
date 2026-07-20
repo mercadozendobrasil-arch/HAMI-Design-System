@@ -1,0 +1,4 @@
+{
+  "version": "2.0.0",
+  "tokens": {"radius.none": 0, "radius.sm": 8, "radius.md": 16, "radius.lg": 24, "radius.pill": 999}
+}

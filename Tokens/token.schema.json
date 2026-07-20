@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HAMI Token Set",
+  "type": "object",
+  "required": ["version", "tokens"],
+  "properties": {
+    "version": {"type": "string"},
+    "tokens": {"type": "object", "minProperties": 1}
+  },
+  "additionalProperties": false
+}

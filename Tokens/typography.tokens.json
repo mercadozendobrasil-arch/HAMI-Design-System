@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tokens": {
+    "font.family.primary": "Montserrat",
+    "font.family.fallback": "Arial, sans-serif",
+    "font.h1": {"size": 60, "weight": 700, "lineHeight": 1.05},
+    "font.h2": {"size": 44, "weight": 700, "lineHeight": 1.1},
+    "font.subtitle": {"size": 28, "weight": 600, "lineHeight": 1.2},
+    "font.feature": {"size": 22, "weight": 600, "lineHeight": 1.15},
+    "font.caption": {"size": 18, "weight": 500, "lineHeight": 1.2}
+  }
+}

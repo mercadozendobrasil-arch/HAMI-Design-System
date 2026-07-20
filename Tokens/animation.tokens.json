@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "tokens": {
+    "motion.none": {"durationMs": 0, "easing": "linear"},
+    "motion.preview.enter": {"durationMs": 240, "easing": "cubic-bezier(0.2, 0, 0, 1)"}
+  },
+  "note": "Static commerce exports always use motion.none. Preview motion must never alter final layout."
+}

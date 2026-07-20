@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "tokens": {
+    "border.none": {"width": 0},
+    "border.hairline": {"width": 1, "color": "{color.line.muted}", "opacity": 0.55},
+    "border.focus": {"width": 2, "color": "{color.accent.primary}", "opacity": 1}
+  }
+}

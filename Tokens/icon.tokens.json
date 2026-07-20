@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tokens": {
+    "icon.style": "outline",
+    "icon.strokeWidth": 2.5,
+    "icon.lineCap": "round",
+    "icon.lineJoin": "round",
+    "icon.size.cover": 56,
+    "icon.size.feature": 72,
+    "icon.gap.label": 16
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tokens": {
+    "color.text.primary": "#111111",
+    "color.text.secondary": "#4F545C",
+    "color.line.muted": "#AEB4BC",
+    "color.surface.top": "#F7F8FA",
+    "color.surface.bottom": "#E8EBEF",
+    "color.surface.card": "#FFFFFF",
+    "color.accent.primary": "#1769C2",
+    "color.state.success": "#238636",
+    "color.state.warning": "#B76E00"
+  }
+}

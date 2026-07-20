@@ -1,0 +1,7 @@
+{
+  "version": "2.0.0",
+  "tokens": {
+    "shadow.product": {"color": "#111111", "opacity": 0.18, "blur": 36, "offsetX": 0, "offsetY": 10},
+    "shadow.card": {"color": "#111111", "opacity": 0.08, "blur": 16, "offsetX": 0, "offsetY": 4}
+  }
+}

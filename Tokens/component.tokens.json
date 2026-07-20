@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tokens": {
+    "canvas.width": 800, "canvas.height": 800, "canvas.colorMode": "RGB", "canvas.format": "PNG",
+    "layout.grid": 8, "layout.safe.margin": 40, "layout.outer.exclusion": 32,
+    "layout.product.coverage.min": 0.72, "layout.product.coverage.max": 0.75,
+    "logo.x": 40, "logo.y": 36, "logo.cover.width": 112, "logo.clearSpace": 16,
+    "title.maxLines": 2, "subtitle.maxLines": 1, "sellingPoint.maxCount": 4,
+    "card.padding": 24, "card.radius": "{radius.lg}", "divider.gap": 24
+  }
+}
