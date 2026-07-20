@@ -1,16 +1,28 @@
-# Template 005 — Protection
+# Template005 — Protection
 
-## Purpose
-展示防摔、包边、防刮和四角保护结构。
-
+## Mission
+Explain real protective geometry without unsupported military or drop-test claims.
+## Canvas
+Use canvas, background and export tokens.
 ## Layout
-- 主产品占画面 60–70%
-- 使用 1–2 个真实局部放大框
-- 用简洁箭头标示保护区域
-- 标题最多两行
-
-## Rules
-- 不使用无法证明的跌落高度或军规认证
-- 不制造夸张爆炸、撞击或破碎效果
-- 保护结构必须来自真实产品
-- 推荐文案：`Proteção Reforçada`、`Cantos Protegidos`、`Proteção Completa`
+One complete product and one or two real protection callouts.
+## Grid
+Use global grid, safe area and product coverage tokens.
+## Typography
+Title and short labels using Montserrat roles.
+## Components
+Title, Product Card, Feature Card, Callout and Arrow.
+## Icons
+Approved outline protection icon; no certification shields unless verified and authorized.
+## Spacing
+Use tokenized card and callout spacing.
+## Product Rules
+Show only real corners, lips, layers or edges; never manufacture impact effects.
+## Text Rules
+Brazilian Portuguese; no unverified height, military grade, indestructibility or absolute safety claim.
+## QA
+Run ProductLock-QA, Layout-QA and Final-QA; reject unsupported evidence.
+## Examples
+`Cantos Protegidos` is acceptable when the photographed corner construction supports it.
+## Dependencies / Related / Version
+Tokens, Feature Card, Product Lock and Prompt005. Version `2.0.0`.
