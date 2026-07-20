@@ -1,5 +1,11 @@
 # Icon System
 
+> Purpose: govern one reusable outline icon language.  
+> Usage: use approved SVG assets and icon tokens only.  
+> Dependencies: `ColorSystem.md`, `GridSystem.md`.  
+> Related: `../Components/Icon.md`, `../Assets/icons/`.  
+> Version: `2.0.0`.
+
 ## Style
 
 - 单一线性图标风格

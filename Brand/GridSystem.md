@@ -1,5 +1,11 @@
 # Grid System
 
+> Purpose: define the 800×800 spatial system.  
+> Usage: consume coordinates through layout and component tokens.  
+> Dependencies: `BrandIdentity.md`.  
+> Related: `../Rules/LayoutRules.md`, `../Templates/`.  
+> Version: `2.0.0`.
+
 ## Base Canvas
 
 - 800 × 800 px

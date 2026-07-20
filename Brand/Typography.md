@@ -1,5 +1,11 @@
 # Typography
 
+> Purpose: define one mobile-readable type family and scale.  
+> Usage: consume roles through `../Tokens/typography.tokens.json`.  
+> Dependencies: `BrandIdentity.md`.  
+> Related: `../Components/Title.md`, `../Rules/TextRules.md`.  
+> Version: `2.0.0`.
+
 ## Font Family
 
 默认字体：`Montserrat`。

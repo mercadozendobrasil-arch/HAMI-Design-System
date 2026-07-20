@@ -1,5 +1,11 @@
 # Brand Identity
 
+> Purpose: define HAMI positioning and immutable visual principles.  
+> Usage: load before tokens, components and templates.  
+> Dependencies: none.  
+> Related: `README.md`, `VoiceAndCopy.md`, `../Rules/`.  
+> Version: `2.0.0`.
+
 ## 品牌定位
 
 HAMI 是面向巴西消费者的专业平板电脑配件品牌，重点覆盖保护套、钢化膜、软膜及相关数码配件。品牌视觉应传达：产品可靠、兼容信息清晰、设计现代、购买风险低。

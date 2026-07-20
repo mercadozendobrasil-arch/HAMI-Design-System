@@ -1,5 +1,11 @@
 # Color System
 
+> Purpose: define semantic brand color intent.  
+> Usage: consume values through `../Tokens/color.tokens.json`.  
+> Dependencies: `BrandIdentity.md`.  
+> Related: `../Tokens/`, `../QA/`.  
+> Version: `2.0.0`.
+
 ## Core Palette
 
 | Token | HEX | Usage |
