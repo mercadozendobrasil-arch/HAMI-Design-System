@@ -1,34 +1,78 @@
 # Template005 — Protection
 
+Version: 2.1.0
+Status: LOCKED
+
 ## Purpose
-Provide the permanent HAMI protection specification.
+Explain real protective geometry and coverage without unsupported certification, test or absolute-safety claims.
 
-## Usage
-Select only for Protection intent, resolve every named dependency, then run the listed QA without changing layout.
+## Required inputs
+- One valid Product Library record.
+- One full product asset.
+- One or two real protective-detail assets or traceable crops.
+- Metadata confirming the described structure.
 
-## Mission
-Explain real protective geometry without unsupported military or drop-test claims.
+Return `BLOCKED_UNSUPPORTED_PROTECTION_CLAIM` when evidence is missing.
+
 ## Canvas
-Use canvas, background and export tokens.
-## Layout
-One complete product and one or two real protection callouts.
-## Grid
-Use global grid, safe area and product coverage tokens.
-## Typography
-Title and short labels using Montserrat roles.
+- 800 × 800 px, RGB, PNG.
+- Global silver background, 40 px safe area, 8-point grid.
+
+## Fixed composition
+- Header: x 40–760, y 40–144.
+- Main product: x 170–730, y 150–690.
+- Callout A: x 40–270, y 210–370.
+- Callout B: x 40–270, y 410–570.
+- Footer/model line: x 40–760, y 716–760.
+- Maximum two protection callouts.
+
 ## Components
-Title, Product Card, Feature Card, Callout and Arrow.
-## Icons
-Approved outline protection icon; no certification shields unless verified and authorized.
-## Spacing
-Use tokenized card and callout spacing.
-## Product Rules
-Show only real corners, lips, layers or edges; never manufacture impact effects.
-## Text Rules
-Brazilian Portuguese; no unverified height, military grade, indestructibility or absolute safety claim.
-## QA
-Run ProductLock-QA, Layout-QA and Final-QA; reject unsupported evidence.
-## Examples
-`Cantos Protegidos` is acceptable when the photographed corner construction supports it.
-## Dependencies / Related / Version
-Tokens, Feature Card, Product Lock and Prompt005. Version `2.0.0`.
+Use only `Title`, `ProductCard`, `FeatureCard`, `Callout`, `Arrow` and `Divider`.
+
+## Typography
+- Montserrat only.
+- Title maximum two lines.
+- Protection labels one line preferred, two maximum.
+- Avoid technical values unless metadata records them.
+
+## Evidence rules
+- Show only real corners, raised lips, reinforced edges, coverage areas or cushioning visible in the source assets.
+- Callout lines must terminate on the exact structure being described.
+- Do not add fake impact waves, broken floors, drop scenes or certification shields.
+- Do not imply protection for areas not physically covered.
+
+## Product integrity
+Never enlarge corners, thicken borders, deepen lips, add cushioning, alter material layers or change geometry to make protection look stronger.
+
+## Allowed claims
+Only when visually and/or metadata supported:
+- `Cantos Protegidos`
+- `Bordas Reforçadas`
+- `Proteção Frontal e Traseira`
+- `Maior Cobertura nas Laterais`
+- `Ajuda a Reduzir Impactos`
+
+## Forbidden claims
+- `Indestrutível`
+- `Proteção 100%`
+- `Grau Militar` without authorized certification
+- specific drop heights without test documentation
+- water, dust or shock ratings not recorded in metadata
+
+## QA gate
+Run:
+1. ProductRecord-QA
+2. ProtectionEvidence-QA
+3. Claim-QA
+4. ProductLock-QA
+5. Text-QA
+6. Layout-QA
+7. Final-QA
+
+Reject if a callout does not point to real structure, the product was visually strengthened, an absolute claim is used, text exceeds two lines or more than two callouts are shown.
+
+## Output naming
+`{style}-{model}-{color}-T05-protection-800.png`
+
+## Dependencies
+Tokens, Title, ProductCard, FeatureCard, Callout, Arrow, ProductLock, Prompt005 and QA modules.
